@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>📚 Smart Study Portal</h2>
+      <input type="email" id="email" placeholder="Enter Email">
+      <input type="password" id="password" placeholder="Enter Password">
+      
+      <button class="btn" onclick="login()">Login</button>
+      <button class="btn" onclick="signup()">Signup</button>
+      <button class="btn google" onclick="googleLogin()">Sign in with Google</button>
+      <button class="btn logout" onclick="logout()">Logout</button>
+      
+      <p class="privacy">
+        Your email is used only for login & notifications.  
+        See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

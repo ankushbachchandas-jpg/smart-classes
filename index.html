@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Hub - CBSE & JAC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-wrap">
+      <a href="#/" class="logo">📚 Smart Study Hub</a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav id="mainNav">
+        <select id="boardSelect">
+          <option value="">Select Board</option>
+          <option value="CBSE">CBSE</option>
+          <option value="JAC">JAC</option>
+        </select>
+
+        <select id="classSelect">
+          <option value="">Select Class</option>
+        </select>
+
+        <select id="subjectSelect">
+          <option value="">Select Subject</option>
+        </select>
+
+        <div class="search-box">
+          <input id="searchInput" placeholder="e.g. Class 10 CBSE Maths Ch 3">
+          <button id="searchBtn">Search</button>
+        </div>
+      </nav>
+
+      <!-- Auth Section -->
+      <div class="auth-section">
+        <button id="googleLoginBtn" class="btn-google">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          Login
+        </button>
+        <div id="userInfo" style="display:none;">
+          <span id="userName"></span>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="app"></main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Smart Study Hub</p>
+      <div class="ad-slot">Google AdSense Slot</div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
